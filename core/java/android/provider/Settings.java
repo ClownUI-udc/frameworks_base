@@ -5807,7 +5807,7 @@ public final class Settings {
          * @hide
          */
         public static final String ADAPTIVE_PLAYBACK_TIMEOUT = "adaptive_playback_timeout";
-        
+
         /**
          * Whether the phone ringtone should be played in an increasing manner
          * @hide
@@ -5853,7 +5853,13 @@ public final class Settings {
          * @hide
          */
         public static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
-        
+
+          /**
+         * Three Finger Gesture from Oppo
+         * @hide
+         */
+        public static final String THREE_FINGER_GESTURE = "three_finger_gesture";
+              
         /**
          * These are all public system settings
          *

@@ -25,6 +25,7 @@ import com.android.systemui.qs.tiles.CompassTile
 import com.android.systemui.qs.tiles.CPUInfoTile
 import com.android.systemui.qs.tiles.DataSwitchTile
 import com.android.systemui.qs.tiles.HeadsUpTile
+import com.android.systemui.qs.tiles.ScreenshotTile
 import com.android.systemui.qs.tiles.SoundTile
 import com.android.systemui.qs.tiles.SyncTile
 import com.android.systemui.qs.tiles.UsbTetherTile
@@ -85,6 +86,12 @@ interface ClownModule {
     @IntoMap
     @StringKey(HeadsUpTile.TILE_SPEC)
     fun bindHeadsUpTile(headsUpTile: HeadsUpTile): QSTileImpl<*>
+
+    /** Inject ScreenshotTile into tileMap in QSModule */
+    @Binds
+    @IntoMap
+    @StringKey(ScreenshotTile.TILE_SPEC)
+    fun bindScreenshotTile(screenshotTile: ScreenshotTile): QSTileImpl<*>
 
     /** Inject SoundTile into tileMap in QSModule */
     @Binds

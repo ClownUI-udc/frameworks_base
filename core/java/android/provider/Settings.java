@@ -5833,6 +5833,13 @@ public final class Settings {
          */
         public static final String INCREASING_RING_START_VOLUME = "increasing_ring_start_vol";
 
+        /**
+         *  Enable statusbar double tap gesture on to put device to sleep
+         *  0 = 0ff, 1 = on
+         * @hide
+         */
+        public static final String DOUBLE_TAP_SLEEP_GESTURE = "double_tap_sleep_gesture";
+        
        /**
          * Whether or not volume button music controls should be enabled to seek media tracks
          * @hide

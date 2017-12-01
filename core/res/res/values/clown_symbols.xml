@@ -50,4 +50,9 @@
     <!-- SystemUI Restart -->
     <java-symbol type="string" name="systemui_restart_title" />
     <java-symbol type="string" name="systemui_restart_message" />
+
+    <!-- Proximity check on wake -->
+    <java-symbol type="bool" name="config_proximityCheckOnWake" />
+    <java-symbol type="integer" name="config_proximityCheckTimeout" />
+    <java-symbol type="bool" name="config_proximityCheckOnWakeEnabledByDefault" />
 </resources>

@@ -5820,6 +5820,12 @@ public final class Settings {
          */
         public static final String INCREASING_RING_START_VOLUME = "increasing_ring_start_vol";
 
+       /**
+         * Whether or not volume button music controls should be enabled to seek media tracks
+         * @hide
+         */
+        public static final String VOLBTN_MUSIC_CONTROLS = "volbtn_music_controls";
+
         /**
          * Ramp up time (seconds) for increasing ring
          * @hide

@@ -40,4 +40,7 @@
   <java-symbol type="string" name="poweroff_alarm_title" />
   <java-symbol type="string" name="poweroff_alarm_body" />
   <java-symbol type="drawable" name="ic_alarm_on" />
+
+  <!-- Location indicator -->
+  <java-symbol type="drawable" name="stat_sys_location" />
 </resources>

@@ -355,6 +355,9 @@ public class TunerServiceImpl extends TunerService {
 
     private void reloadAll() {
         for (String key : mTunableLookup.keySet()) {
+            if (ArrayUtils.contains(RESET_EXCEPTION_LIST, key) || isCustomSetting(key)) {
+                continue;
+            }
             String value = getValue(key);
             for (Tunable tunable : mTunableLookup.get(key)) {
                 if (tunable != null) {
@@ -376,9 +379,6 @@ public class TunerServiceImpl extends TunerService {
 
         // A couple special cases.
         for (String key : mTunableLookup.keySet()) {
-            if (ArrayUtils.contains(RESET_EXCEPTION_LIST, key) || isCustomSetting(key)) {
-                continue;
-            }
             setValue(key, null);
         }
     }

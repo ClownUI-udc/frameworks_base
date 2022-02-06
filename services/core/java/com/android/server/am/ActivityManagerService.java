@@ -20157,6 +20157,7 @@ public class ActivityManagerService extends IActivityManager.Stub
             return index >= 0 && !mMediaProjectionTokenMap.valueAt(index).isEmpty();
         }
     }
+    
     boolean shouldSkipBootCompletedBroadcastForPackage(ApplicationInfo info) {
         return getAppOpsManager().checkOpNoThrow(
                 AppOpsManager.OP_RUN_ANY_IN_BACKGROUND,

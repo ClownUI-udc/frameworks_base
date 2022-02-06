@@ -25,4 +25,7 @@
         <item quantity="one">%d device connected</item>
         <item quantity="other">%d devices connected</item>
     </plurals>
+    
+    <!-- Google lens screenshot notification -->
+    <string name="lens">Lens</string>
 </resources>

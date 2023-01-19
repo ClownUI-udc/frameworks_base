@@ -10,6 +10,9 @@
     <!-- Build fingerprint from the stock ROM -->
     <string name="config_stockFingerprint" translatable="false"></string>
 
+    <!-- Display color inversion availability -->
+    <bool name="config_displayInversionAvailable">true</bool>
+    
     <!-- Define device configs on boot -->
     <string-array name="global_device_configs_override" translatable="false">
     </string-array>

@@ -27,7 +27,7 @@
     <!-- Whether to spoof device as pixel for certain google apps, to
          unlock pixel-exclusive features -->
     <bool name="config_spoofGoogleApps">true</bool>
-    
+
     <!-- Display color inversion availability -->
     <bool name="config_displayInversionAvailable">true</bool>
     
@@ -76,4 +76,8 @@
 
     <!-- Whether device has an alert slider. -->
     <bool name="config_hasAlertSlider">false</bool>
+    
+    <!-- Delay in ms before invoking single tap gesture
+         Should be set to dt2w max time / 2 when needed -->
+    <integer name="config_singleTapDelay">0</integer>
 </resources>

@@ -51,4 +51,9 @@
     <!-- Delay in ms before invoking single tap gesture
          Should be set to dt2w max time / 2 when needed -->
     <java-symbol type="integer" name="config_singleTapDelay" />
+
+    <!-- Package Manager -->
+    <java-symbol type="array" name="config_deviceDisabledComponents" />
+    <java-symbol type="array" name="config_globallyDisabledComponents" />
+    <java-symbol type="array" name="config_forceEnabledComponents" />
 </resources>

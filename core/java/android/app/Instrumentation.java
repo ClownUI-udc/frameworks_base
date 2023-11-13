@@ -1285,6 +1285,9 @@ public class Instrumentation {
             ClassNotFoundException {
         Application app = getFactory(context.getPackageName())
                 .instantiateApplication(cl, className);
+        AttestationHooks.setProps(context);
+        GamesPropsUtils.setProps(context);
+        PixelPropsUtils.setProps(context);
         app.attach(context);
         AttestationHooks.setProps(context);
         GamesPropsUtils.setProps(context);
@@ -1305,6 +1308,9 @@ public class Instrumentation {
             throws InstantiationException, IllegalAccessException, 
             ClassNotFoundException {
         Application app = (Application)clazz.newInstance();
+        AttestationHooks.setProps(context);
+        GamesPropsUtils.setProps(context);
+        PixelPropsUtils.setProps(context);
         app.attach(context);
         AttestationHooks.setProps(context);
         GamesPropsUtils.setProps(context);
